@@ -3272,6 +3272,123 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Layouts_MainLayout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Layouts/MainLayout.vue */ "./resources/js/Pages/Layouts/MainLayout.vue");
+/* harmony import */ var _components_PageTitle_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/PageTitle.vue */ "./resources/js/components/PageTitle.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Layout: _Layouts_MainLayout_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    PageTitle: _components_PageTitle_vue__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  data: function data() {
+    return {
+      umur: "",
+      umurError: "",
+      result: ""
+    };
+  },
+  // end of data()
+  methods: {
+    calculate: function calculate() {
+      var currentObj = this;
+
+      if (!currentObj.umur) {
+        currentObj.umurError = "Age is Required";
+      } else {
+        if (currentObj.umur <= 18) {
+          if (currentObj.umur <= 10) {
+            currentObj.result = "Anak-Anak";
+          } else {
+            currentObj.result = "Remaja";
+          }
+        } else {
+          currentObj.result = "Bukan usia anak maupun remaja";
+        }
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Dashboard.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Dashboard.vue?vue&type=script&lang=js& ***!
@@ -4213,6 +4330,11 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Input Check',
         icon: 'mdi-check',
         url: '/input-check',
+        sub: false
+      }, {
+        title: 'Age Check',
+        icon: 'mdi-check',
+        url: '/age-check',
         sub: false
       }, {
         title: 'Category',
@@ -10991,6 +11113,45 @@ component.options.__file = "resources/js/Pages/CategoryManagement/CreateCategory
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckAge/CheckAge.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Pages/CheckAge/CheckAge.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CheckAge.vue?vue&type=template&id=15ac0d54& */ "./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54&");
+/* harmony import */ var _CheckAge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CheckAge.vue?vue&type=script&lang=js& */ "./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _CheckAge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__.render,
+  _CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/CheckAge/CheckAge.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Dashboard.vue":
 /*!******************************************!*\
   !*** ./resources/js/Pages/Dashboard.vue ***!
@@ -11320,6 +11481,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckAge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CheckAge.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckAge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Dashboard.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/Pages/Dashboard.vue?vue&type=script&lang=js& ***!
@@ -11548,6 +11725,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckAge_vue_vue_type_template_id_15ac0d54___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CheckAge.vue?vue&type=template&id=15ac0d54& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54&");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Dashboard.vue?vue&type=template&id=097ba13b&":
 /*!*************************************************************************!*\
   !*** ./resources/js/Pages/Dashboard.vue?vue&type=template&id=097ba13b& ***!
@@ -11685,7 +11879,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "layout",
-    { attrs: { title: "Create Category - Dashboard" } },
+    { attrs: { title: "Calculator - Dashboard" } },
     [
       _c("page-title", {
         attrs: {
@@ -12595,6 +12789,206 @@ var render = function() {
           }
         },
         [_vm._v("\n    " + _vm._s(_vm.successSnackbarText) + "\n\n    ")]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/CheckAge/CheckAge.vue?vue&type=template&id=15ac0d54& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "layout",
+    { attrs: { title: "Check Age - Dashboard" } },
+    [
+      _c("page-title", {
+        attrs: {
+          title: "Check Usia Anda",
+          subtitle: "Check sebutan untuk umur anda"
+        }
+      }),
+      _vm._v(" "),
+      _c(
+        "v-container",
+        [
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { attrs: { cols: "12" } },
+                [
+                  _c(
+                    "v-card",
+                    {
+                      staticClass:
+                        "mx-auto mx-sm-8 mx-md-8 mx-lg-8 mx-xl-8 my-2",
+                      attrs: {
+                        width: _vm.$vuetify.breakpoint.smAndDown
+                          ? "80%"
+                          : "720px",
+                        color: "white",
+                        rounded: "xl"
+                      }
+                    },
+                    [
+                      _c(
+                        "v-card-text",
+                        [
+                          _c(
+                            "v-form",
+                            { staticClass: "ma-5" },
+                            [
+                              _c(
+                                "v-row",
+                                [
+                                  _c(
+                                    "v-col",
+                                    {
+                                      attrs: {
+                                        cols: "12",
+                                        sm: "12",
+                                        md: "12",
+                                        lg: "12",
+                                        xl: "12"
+                                      }
+                                    },
+                                    [
+                                      _c("v-text-field", {
+                                        attrs: {
+                                          label: "Umur",
+                                          hint: "Required",
+                                          required: "",
+                                          filled: "",
+                                          dense: "",
+                                          type: "text",
+                                          rounded: "",
+                                          "error-messages": _vm.umurError
+                                        },
+                                        model: {
+                                          value: _vm.umur,
+                                          callback: function($$v) {
+                                            _vm.umur = $$v
+                                          },
+                                          expression: "umur"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "white--text",
+                                  attrs: {
+                                    color: "#4E48FC",
+                                    large: "",
+                                    rounded: "",
+                                    type: "submit"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.calculate()
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Calculate\n              "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "white--text ml-2",
+                                  attrs: {
+                                    color: "grey",
+                                    large: "",
+                                    rounded: "",
+                                    type: "submit"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      ;(_vm.umurError = ""), (_vm.umur = "")
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                Clear\n              "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: _vm.result,
+                                  expression: "result"
+                                }
+                              ],
+                              staticClass: "text-center mt-2"
+                            },
+                            [
+                              _c("v-divider"),
+                              _vm._v(" "),
+                              _c("h2", { staticClass: "mb-2 mt-3" }, [
+                                _vm._v("Result:")
+                              ]),
+                              _vm._v(" "),
+                              _c("h1", [_vm._v(_vm._s(_vm.result))])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
       )
     ],
     1
@@ -71824,6 +72218,8 @@ var map = {
 	"./CategoryManagement/CategoryList.vue": "./resources/js/Pages/CategoryManagement/CategoryList.vue",
 	"./CategoryManagement/CreateCategory": "./resources/js/Pages/CategoryManagement/CreateCategory.vue",
 	"./CategoryManagement/CreateCategory.vue": "./resources/js/Pages/CategoryManagement/CreateCategory.vue",
+	"./CheckAge/CheckAge": "./resources/js/Pages/CheckAge/CheckAge.vue",
+	"./CheckAge/CheckAge.vue": "./resources/js/Pages/CheckAge/CheckAge.vue",
 	"./Dashboard": "./resources/js/Pages/Dashboard.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./GoodsManagement/CreateGoods": "./resources/js/Pages/GoodsManagement/CreateGoods.vue",

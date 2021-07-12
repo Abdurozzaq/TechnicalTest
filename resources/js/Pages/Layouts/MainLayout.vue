@@ -132,6 +132,12 @@ export default {
             sub: false
           },
           { 
+            title: 'Age Check', 
+            icon: 'mdi-check' ,
+            url: '/age-check',
+            sub: false
+          },
+          { 
             title: 'Category', 
             icon: 'mdi-shape-outline',
             sub: [

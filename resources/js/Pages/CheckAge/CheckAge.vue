@@ -1,7 +1,7 @@
 <template>
-  <layout title="Calculator - Dashboard">
+  <layout title="Check Age - Dashboard">
 
-    <page-title title="Kalulator Ongkir Progresif" subtitle="Hitung Ongkir disini" />
+    <page-title title="Check Usia Anda" subtitle="Check sebutan untuk umur anda" />
     
     <v-container>
       <v-row>
@@ -12,27 +12,15 @@
                 <v-row>
                   <v-col cols="12" sm="12" md="12" lg="12" xl="12">
                     <v-text-field
-                      label="Item Quantity"
+                      label="Umur"
                       hint="Required"
                       required
                       filled
                       dense
                       type="text"
                       rounded
-                      v-model="item_qty"
-                      :error-messages="qtyError"
-                    ></v-text-field>
-
-                    <v-text-field
-                      label="Price Per Kg"
-                      hint="Required"
-                      required
-                      filled
-                      dense
-                      type="text"
-                      rounded
-                      v-model="price_per_kg"
-                      :error-messages="priceError"
+                      v-model="umur"
+                      :error-messages="umurError"
                     ></v-text-field>
                   </v-col>
                 </v-row>
@@ -54,7 +42,7 @@
                   large
                   rounded
                   type="submit"
-                  @click.prevent="qtyError = '', priceError = '', item_qty = '', price_per_kg = ''"
+                  @click.prevent="umurError = '',  umur = ''"
                 >
                   Clear
                 </v-btn>
@@ -87,10 +75,8 @@
 
     data() {
       return {
-        price_per_kg: "",
-        priceError: "",
-        item_qty: "",
-        qtyError: "",
+        umur: "",
+        umurError: "",
         result: ""
       }
     }, // end of data()
@@ -99,16 +85,31 @@
       calculate() {
         let currentObj = this
       
-        if(!currentObj.item_qty) {
-          currentObj.qtyError = "Quantity is Required"
+        if(!currentObj.umur) {
+
+          currentObj.umurError = "Age is Required"
+
+        } else {
+
+          if (currentObj.umur<=18) {
+
+            if (currentObj.umur<=10){
+
+              currentObj.result = "Anak-Anak"
+
+            } else {
+
+             currentObj.result = "Remaja"
+
+            }
+
+          } else {
+
+            currentObj.result = "Bukan usia anak maupun remaja"
+
+          }
+
         }
-
-        if(!currentObj.price_per_kg) {
-          currentObj.priceError = "Price is Required"
-        }
-
-        currentObj.result = currentObj.item_qty * currentObj.price_per_kg
-
       },
     }
   }

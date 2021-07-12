@@ -40,5 +40,8 @@ Route::post('/goods/list/delete', '\App\Http\Controllers\GoodsController@deleteG
 // Calculator
 Route::get('/calculator', '\App\Http\Controllers\CalculatorController@calculatorOngkir');
 
-// Calculator
+// input check
 Route::get('/input-check', '\App\Http\Controllers\InputCheckController@index');
+
+// age check
+Route::get('/age-check', '\App\Http\Controllers\AgeCheckController@index');
